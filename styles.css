@@ -3,10 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("hospital copy.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+   
 }
 
 /* NAVBAR */
@@ -35,8 +32,8 @@ h1, h2 {
 
 /* SECTIONS */
 section {
-    padding: 40px;
-    margin: 20px;
+    padding: 40px 20px;
+    margin: 0;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
@@ -225,13 +222,7 @@ nav a {
     align-items: center;
 }
 
-/* SERVICES */
-.service-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
+
 
 .service-card {
     background: white;
@@ -278,8 +269,9 @@ input, textarea {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 85%;
+    width: 100%;          /* 🔥 yeh change karo */
     max-width: 1200px;
+    margin: auto;         /* center alignment */
 }
 
 /* TEXT */
@@ -319,8 +311,12 @@ button {
 }
 .hero {
     position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
 }
-
 .hero::before {
     content: "";
     position: absolute;
@@ -336,12 +332,11 @@ button {
     z-index: 1;
     color: white;
 }
-section {
-    display: none;
-}
+
 #front {
     display: flex;
 }
+
 @media (max-width: 768px) {
 
     .hero-content {
