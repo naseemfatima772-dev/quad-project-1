@@ -366,3 +366,6 @@ section {
     min-height: 100vh;
     height: auto;
 }
+#front {
+    display: flex;
+}
