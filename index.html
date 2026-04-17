@@ -98,26 +98,23 @@
 <script>
 
 
+window.onload = function () {
+    showSection("front");
+};
 
 function showSection(id) {
 
-    // sab hide karo
-    document.getElementById("front").style.display = "none";
-    document.getElementById("about").style.display = "none";
-    document.getElementById("services").style.display = "none";
-    document.getElementById("contact").style.display = "none";
+    const sections = document.querySelectorAll("section");
 
-    // front (home page)
-    if (id === "home" || id === "front") {
-        document.getElementById("front").style.display = "flex";
-    } 
-    else {
-        document.getElementById(id).style.display = "block";
-    }
+    sections.forEach(sec => {
+        sec.style.display = "none";
+    });
 
-    
+    document.getElementById(id).style.display = "block";
+
     window.scrollTo(0, 0);
 }
 
 </script>
+    
 
