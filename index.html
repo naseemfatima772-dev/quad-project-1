@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quad Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to Quad Solutions</h1>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="#" onclick="showSection('front')">Home</a>
+    <a href="#" onclick="showSection('about')">About</a>
+    <a href="#" onclick="showSection('services')">Services</a>
+    <a href="#" onclick="showSection('contact')">Contact</a>
+</nav>
+
+<!-- FRONT PAGE -->
+<section id="front" class="hero">
+    <div class="hero-content">
+        <div class="text">
+            <h1>Welcome to Quad Solutions</h1>
+            <p>Medical Credentialing & Healthcare Support Services</p>
+            <button onclick="showSection('services')">Get Started</button>
+        </div>
+        
+
+      
+    </div>
+</section>
+
+
+<!-- SERVICES -->
+<section id="services" class="hidden">
+    <h2>Our Services</h2>
+
+    <div class="service-container">
+
+        <div class="service-card">
+            <h3>Provider Credentialing</h3>
+            <p>We manage the complete credentialing process for healthcare providers including documentation, verification, and approvals.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Insurance Enrollment</h3>
+            <p>We assist providers in getting enrolled with insurance companies quickly and efficiently.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Medical Billing</h3>
+            <p>Our billing services ensure accurate claim submission and faster reimbursements.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Compliance Support</h3>
+            <p>We help maintain healthcare compliance and keep your practice aligned with regulations.</p>
+        </div>
+
+    </div>
+</section>
+<section id="about" class="hidden">
+    <h2>About Our Company</h2>
+
+    <p>
+        Quad Solutions is a professional healthcare support company specializing in 
+        medical credentialing, insurance enrollment, and billing services.
+    </p>
+
+    <p>
+        Our mission is to simplify administrative processes for healthcare providers 
+        so they can focus on patient care.
+    </p>
+
+    <p>
+        We are committed to accuracy, efficiency, and compliance with healthcare standards.
+    </p>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="hidden">
+    <h2>Contact Us</h2>
+
+    <p>Email: info@quadsolutions.com</p>
+    <p>Phone: +92 300 1234567</p>
+    <p>Address: Lahore, Pakistan</p>
+
+    <h3>Send us a message</h3>
+
+    <form onsubmit="handleSubmit(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+</section>
+<script>
+
+
+
+function showSection(id) {
+
+    // sab hide karo
+    document.getElementById("front").style.display = "none";
+    document.getElementById("about").style.display = "none";
+    document.getElementById("services").style.display = "none";
+    document.getElementById("contact").style.display = "none";
+
+    // front (home page)
+    if (id === "home" || id === "front") {
+        document.getElementById("front").style.display = "flex";
+    } 
+    else {
+        document.getElementById(id).style.display = "block";
+    }
+
+    
+    window.scrollTo(0, 0);
+}
+
+</script>
+

@@ -1,0 +1,344 @@
+/* RESET */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("hospital copy.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* NAVBAR */
+nav {
+    background-color: #0b5ed7;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* HEADINGS */
+h1, h2 {
+    color: #0b5ed7;
+}
+
+/* SECTIONS */
+section {
+    padding: 40px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+/* HOME SECTION */
+#home {
+    text-align: center;
+}
+
+/* SERVICES LIST */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* CONTACT */
+#contact p {
+    font-weight: bold;
+}
+
+/* HR LINE */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+}
+#hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #eaf2ff;
+}
+
+#hero h1 {
+    font-size: 36px;
+    color: #0b5ed7;
+}
+
+#hero p {
+    font-size: 18px;
+    color: #333;
+    margin: 20px 0;
+}
+
+#hero button {
+    background-color: #0b5ed7;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#hero button:hover {
+    background-color: #084bb5;
+}
+
+
+/* SERVICE CARD */
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+/* CARD DESIGN */
+.service-card {
+    background: linear-gradient(135deg, #ffffff, #f0f6ff);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #e6e6e6;
+}
+
+/* HOVER EFFECT */
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* TITLE */
+.service-card h3 {
+    color: #0b5ed7;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* TEXT */
+.service-card p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+.service-card h3 {
+    color: #0b5ed7;
+}
+/* CONTACT FORM */
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #0b5ed7;
+}
+
+form button {
+    background-color: #0b5ed7;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #084bb5;
+}
+/* FOOTER */
+footer {
+    background-color: #0b5ed7;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 14px;
+}
+html {
+    scroll-behavior: smooth;
+}
+button {
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* NAVBAR */
+nav {
+    background: #0b5ed7;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* HERO */
+
+.hero {
+    background-image: url("hospital copy.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* SERVICES */
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* BACK TO TOP */
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    display: none;
+}
+
+/* FADE ANIMATION */
+.fade {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+/* BOX */
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    max-width: 1200px;
+}
+
+/* TEXT */
+.text {
+    width: 50%;
+}
+
+.text h1 {
+    font-size: 40px;
+    color: #0b5ed7;
+}
+
+.text p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+/* BUTTON */
+button {
+    padding: 10px 20px;
+    background-color: #0b5ed7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* IMAGE */
+.image {
+    width: 50%;
+    text-align: center;
+}
+
+.image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+}
+.hero {
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+section {
+    display: none;
+}
+#front {
+    display: flex;
+}
