@@ -362,3 +362,7 @@ section {
         max-width: 90%;
     }
 }
+.hero {
+    min-height: 100vh;
+    height: auto;
+}
